@@ -2,27 +2,26 @@
 // Consider the following data:
 data = [
   {
-    name: 'Butters',
+    name: "Butters",
     age: 3,
-    type: 'dog'
+    type: "dog",
   },
   {
-    name: 'Lizzy',
+    name: "Lizzy",
     age: 6,
-    type: 'dog'
+    type: "dog",
   },
   {
-    name: 'Red',
+    name: "Red",
     age: 1,
-    type: 'cat'
+    type: "cat",
   },
   {
-    name: 'Joey',
+    name: "Joey",
     age: 3,
-    type: 'dog'
+    type: "dog",
   },
 ];
-
 
 /*
 The goal of this article is going to be to write some 
@@ -37,19 +36,20 @@ Our process might look something like this:
 
 */
 
-let result = data.filter((animal)=> animal.type == 'dog')
-.map((animal)=>(animal.age)*7)
-.reduce((pre,current)=>pre+current,0)
+let result = data
+  .filter((animal) => animal.type == "dog")
+  .map((animal) => animal.age * 7)
+  .reduce((pre, current) => pre + current, 0);
 
 // console.log(result)
-let result2 = data.filter(function(animal){
-  return animal.type == 'dog'
-
-}).map(function(task){
-  
-  return (task.age)*7
-}).reduce(function(pre,current){
-  return pre+current
-},0)
-console.log(result2)
-
+let result2 = data
+  .filter(function (animal) {
+    return animal.type == "dog";
+  })
+  .map(function (task) {
+    return task.age * 7;
+  })
+  .reduce(function (pre, current) {
+    return pre + current;
+  }, 0);
+console.log(result2);

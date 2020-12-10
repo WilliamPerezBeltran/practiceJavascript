@@ -25,32 +25,35 @@ the array you called reduce on
 
 */
 
-
-
-
 // reduce in Practice
 
-let numbers0 = [1,2,3,4,5,6], total0 = 0
+let numbers0 = [1, 2, 3, 4, 5, 6],
+  total0 = 0;
 
-numbers0.forEach(function(number){
-	total0 += number
+numbers0.forEach(function (number) {
+  total0 += number;
+});
+console.log(total0);
 
-})
-console.log(total0)
-
-const total1 = [1,2,3,4,5,6].reduce((previous,current)=>previous+current,0)
-console.log(total1)
-
-
+const total1 = [1, 2, 3, 4, 5, 6].reduce(
+  (previous, current) => previous + current,
+  0
+);
+console.log(total1);
 
 // ===============================
 
 const total = [1, 2, 3, 4, 5].reduce(function (previous, current, index) {
-    const val = previous + current;
-    console.log("The previous value is " + previous + 
-                "; the current value is " + current +
-                ", and the current iteration is " + (index + 1));
-    return val;
+  const val = previous + current;
+  console.log(
+    "The previous value is " +
+      previous +
+      "; the current value is " +
+      current +
+      ", and the current iteration is " +
+      (index + 1)
+  );
+  return val;
 }, 0);
-  
+
 console.log("The loop is done, and the final value is " + total + ".");

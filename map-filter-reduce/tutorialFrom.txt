@@ -1,1 +1,10 @@
 https://code.tutsplus.com/tutorials/how-to-use-map-filter-reduce-in-javascript--cms-26209
+
+
+https://hackernoon.com/functional-programming-in-js-map-filter-reduce-pt-5-308a205fdd5f
+
+http://reactivex.io/learnrx/
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some
+
+https://www.digitalocean.com/community/tutorials/list-processing-with-map-filter-and-reduce

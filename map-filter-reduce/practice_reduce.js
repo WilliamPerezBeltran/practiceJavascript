@@ -175,3 +175,37 @@ let akafjalf= arraydsfds.reduce((accumulator, current) => ({
 })
 
 console.log(akafjalf)
+
+
+
+
+const entrada10 = [
+      { id: 1, quantity: 10, code_id:1, movementType: 'entrada', tags: '[a,v,c,d,f,r]' },
+      { id: 2, quantity: 20, code_id:2, movementType: 'entrada', tags: '[a,v,c,d,f,r]' },
+      { id: 3, quantity: 30, code_id:3, movementType: 'entrada', tags: '[a,v,c,d,f,r]' },
+      { id: 4, quantity: 40, code_id:4, movementType: 'entrada', tags: '[a,v,c,d,f,r]' },
+      { id: 5, quantity: 50, code_id:5, movementType: 'entrada', tags: '[a,v,c,d,f,r]' },
+      { id: 6, quantity: 60, code_id:6, movementType: 'entrada', tags: '[a,v,c,d,f,r]' },
+      { id: 7, quantity: 60, code_id:6, movementType: 'entrada', tags: '[a,v,c,d,f,r]' },
+      { id: 8, quantity: 60, code_id:6, movementType: 'entrada', tags: '[a,v,c,d,f,r]' },
+]
+console.log('entrada10')
+console.log(entrada10)
+
+let result10 = entrada10.reduce((accu,item,index)=>{
+	accu[ item.code_id] = { id: item.id, quantity: item.quantity, code_id:item.code_id, movementType: item.movementType, tags:item.tags }
+return accu 
+
+},{})
+
+console.log('result10')
+console.log(result10)
+
+let result11 = entrada10.reduce((accu,item,index)=>{
+  // accu[ item.code_id] = { id: item.id, quantity: item.quantity, code_id:item.code_id, movementType: item.movementType, tags:item.tags }
+return item.code_id 
+
+},[])
+
+console.log('result11')
+console.log(result11)

@@ -153,7 +153,7 @@ class IndexInventory extends React.Component {
   //       let count = 0;
   //       for (var i = 0; i < output.length; i++) {
   //         // si el array es vacio no entra
-  //         // if (!!output[i].length) { //esto no estoy seguto que toca hacerlo revisarlo 
+  //         // if (!!output[i].length) { //esto no estoy seguto que toca hacerlo revisarlo
   //           if (output[i].code_id === code_id) {
   //             count += output[i].quantity;
   //           }
@@ -185,7 +185,7 @@ class IndexInventory extends React.Component {
   //     let result = null
   //     // let mergeSum = null
 
-  //     if (sumDataInput.length > 0 && sumDataOutput.length > 0 ) { 
+  //     if (sumDataInput.length > 0 && sumDataOutput.length > 0 ) {
   //       // code...
 
   //         result = mergeSum.map((item)=>{
@@ -214,7 +214,6 @@ class IndexInventory extends React.Component {
   //         })
   //     }
 
-
   //     let deleteAll = await FetchInventory.deleteAllInventory();
 
   //       if (deleteAll) {
@@ -225,12 +224,6 @@ class IndexInventory extends React.Component {
   //           console.log("error algo paso en esta mierda FetchInventory");
   //         }
   //       }
-
-
-
-
-
-
 
   //   } catch (error) {
   //     throw error;

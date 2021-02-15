@@ -60,8 +60,7 @@ console.log("The loop is done, and the final value is " + total + ".");
 // ===============================
 const numbers = [5, 10, 15];
 
+const total1 = numbers.reduce((accu, item) => accu + item);
 
-const total1  = numbers.reduce((accu,item)=> accu+item)
-
-console.log('total1')
-console.log(total1)
+console.log("total1");
+console.log(total1);

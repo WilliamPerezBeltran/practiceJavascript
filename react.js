@@ -1,91 +1,96 @@
-ejercicio react phone book z02
+// ejercicio react phone book z02
 
-import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
+import React, { useState } from "react";
+import ReactDOM from "react-dom";
 
 const style = {
   table: {
-    borderCollapse: 'collapse'
+    borderCollapse: "collapse",
   },
   tableCell: {
-    border: '1px solid gray',
+    border: "1px solid gray",
     margin: 0,
-    padding: '5px 10px',
-    width: 'max-content',
-    minWidth: '150px'
+    padding: "5px 10px",
+    width: "max-content",
+    minWidth: "150px",
   },
   form: {
     container: {
-      padding: '20px',
-      border: '1px solid #F0F8FF',
-      borderRadius: '15px',
-      width: 'max-content',
-      marginBottom: '40px'
+      padding: "20px",
+      border: "1px solid #F0F8FF",
+      borderRadius: "15px",
+      width: "max-content",
+      marginBottom: "40px",
     },
     inputs: {
-      marginBottom: '5px'
+      marginBottom: "5px",
     },
     submitBtn: {
-      marginTop: '10px',
-      padding: '10px 15px',
-      border:'none',
-      backgroundColor: 'lightseagreen',
-      fontSize: '14px',
-      borderRadius: '5px'
-    }
-  }
-}
+      marginTop: "10px",
+      padding: "10px 15px",
+      border: "none",
+      backgroundColor: "lightseagreen",
+      fontSize: "14px",
+      borderRadius: "5px",
+    },
+  },
+};
 
 function PhoneBookForm({ addEntryToPhoneBook }) {
   return (
-    <form onSubmit={e => { e.preventDefault() }} style={style.form.container}>
+    <form
+      onSubmit={(e) => {
+        e.preventDefault();
+      }}
+      style={style.form.container}
+    >
       <label>First name:</label>
       <br />
-      <input 
+      <input
         style={style.form.inputs}
-        className='userFirstname'
-        name='userFirstname' 
-        type='text'
+        className="userFirstname"
+        name="userFirstname"
+        type="text"
       />
-      <br/>
+      <br />
       <label>Last name:</label>
       <br />
-      <input 
+      <input
         style={style.form.inputs}
-        className='userLastname'
-        name='userLastname' 
-        type='text' 
+        className="userLastname"
+        name="userLastname"
+        type="text"
       />
       <br />
       <label>Phone:</label>
       <br />
       <input
         style={style.form.inputs}
-        className='userPhone' 
-        name='userPhone' 
-        type='text'
+        className="userPhone"
+        name="userPhone"
+        type="text"
       />
-      <br/>
-      <input 
-        style={style.form.submitBtn} 
-        className='submitButton'
-        type='submit' 
-        value='Add User' 
+      <br />
+      <input
+        style={style.form.submitBtn}
+        className="submitButton"
+        type="submit"
+        value="Add User"
       />
     </form>
-  )
+  );
 }
 
 function InformationTable(props) {
   return (
-    <table style={style.table} className='informationTable'>
-      <thead> 
+    <table style={style.table} className="informationTable">
+      <thead>
         <tr>
           <th style={style.tableCell}>First name</th>
           <th style={style.tableCell}>Last name</th>
           <th style={style.tableCell}>Phone</th>
         </tr>
-      </thead> 
+      </thead>
     </table>
   );
 }
@@ -99,7 +104,4 @@ function Application(props) {
   );
 }
 
-ReactDOM.render(
-  <Application />,
-  document.getElementById('root')
-);
+ReactDOM.render(<Application />, document.getElementById("root"));

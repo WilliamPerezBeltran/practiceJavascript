@@ -1,25 +1,21 @@
+function counterAs1(bigString, n) {
+  let counterAs = 0;
+  for (var i = 0; i < n; i++) {
+    if (bigString[i] === "a") {
+      counterAs++;
+    }
+  }
+  return counterAs;
+}
+
 function repeatedString(s, n) {
   let bigString = s.split("");
-  let counter = 0;
-  let pivote = 0;
-  let newArray = [];
-  while (counter < n) {
-    newArray.push(bigString[pivote]);
-    counter++;
-    pivote++;
-    if (pivote === bigString.length) {
-      pivote = 0;
-    }
-  }
+  let times = Math.floor(n / bigString.length);
+  let remainder = n % bigString.length;
 
-  counter = 0;
-  for (let i = 0; i < newArray.length; i++) {
-    if (newArray[i] === "a") {
-      counter++;
-    }
-  }
-  return counter;
+  let _asCount1 = counterAs1(bigString, bigString.length);
+  let _asCount2 = counterAs1(bigString, remainder);
+  return _asCount1 * times + _asCount2;
 }
-console.log(repeatedString("a", 1000000000000));
 
-// module.exports = repeatedString;
+module.exports = repeatedString;

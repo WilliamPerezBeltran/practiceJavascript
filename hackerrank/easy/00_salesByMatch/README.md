@@ -1,59 +1,59 @@
 # Exercise Sales By Match (easy)
 
-Explication
-- [Explication](https://www.youtube.com/watch?v=CwbT90-9OuA&ab_channel=KuldipGhotane)
+source
 
-source 
-- [source](https://www.hackerrank.com/challenges/repeated-string/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup)
+- [source](https://www.hackerrank.com/challenges/sock-merchant/problem?h_l=interview&playlist_slugs%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D=warmup)
 
-## Statement of the exercise
+## Run test
 
 ```bash
-There is a string, , of lowercase English letters that is repeated infinitely many times. Given an integer, , find and print the number of letter a's in the first  letters of the infinite string.
+$ npm run test
+```
+
+## Exercise's statement
+
+```bash
+There is a large pile of socks that must be paired by color. Given an array of integers representing the color of each sock, determine how many pairs of socks with matching colors there are.
 
 Example
+n = 7
+ar = [1,2,1,2,1,3,2]
 
 
-The substring we consider is , the first  characters of the infinite string. There are  occurrences of a in the substring.
+There is one pair of color  1 and one of color 2. There are three odd socks left, one of each color.The number of pairs is 2.
 
 Function Description
 
-Complete the repeatedString function in the editor below.
+Complete the sockMerchant function in the editor below.
 
-repeatedString has the following parameter(s):
+sockMerchant has the following parameter(s):
 
-s: a string to repeat
-n: the number of characters to consider
+int n: the number of socks in the pile
+int ar[n]: the colors of each sock
 Returns
 
-int: the frequency of a in the substring
+int: the number of pairs
 Input Format
 
-The first line contains a single string, .
-The second line contains an integer, .
+The first line contains an integer n, the number of socks represented in ar.
+The second line contains n space-separated integers, ar[i], the colors of the socks in the pile.
 
 Constraints
 
-For  of the test cases, .
+ where
 Sample Input
 
-Sample Input 0
+STDIN                       Function
+-----                       --------
+9                           n = 9
+10 20 20 10 10 30 50 10 20  ar = [10, 20, 20, 10, 10, 30, 50, 10, 20]
+Sample Output
 
-aba
-10
-Sample Output 0
+3
+Explanation
 
-7
-Explanation 0
-The first  letters of the infinite string are abaabaabaa. Because there are  a's, we return .
+sock.png
 
-Sample Input 1
+There are three pairs of socks.
 
-a
-1000000000000
-Sample Output 1
-
-1000000000000
-Explanation 1
-Because all of the first  letters of the infinite string are a, we return .
 ```

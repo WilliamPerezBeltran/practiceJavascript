@@ -1,9 +1,5 @@
 # Practice javascript
 
-Repo Inventory stack software using rfid technology (radio frequency identifier)
-
-- [Use CoreUI Free Bootstrap Admin Template](https://github.com/coreui/coreui-free-bootstrap-admin-template)
-
 ## Stack
 
 - Node v12.16.2

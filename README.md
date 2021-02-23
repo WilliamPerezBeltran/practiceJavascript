@@ -25,6 +25,13 @@ $ yarn install or npm install
 $ npm run test
 ```
 
+
+### 500+ Data Structures and Algorithms Interview Questions & Practice Problems
+(Interview question practice)[https://blog.usejournal.com/500-data-structures-and-algorithms-practice-problems-35afe8a1e222]
+
+
+
+
 ## What's included
 
 ```

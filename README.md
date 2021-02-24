@@ -1,9 +1,5 @@
 # Practice javascript
 
-Repo Inventory stack software using rfid technology (radio frequency identifier)
-
-- [Use CoreUI Free Bootstrap Admin Template](https://github.com/coreui/coreui-free-bootstrap-admin-template)
-
 ## Stack
 
 - Node v12.16.2
@@ -28,6 +24,10 @@ $ yarn install or npm install
 # Run test
 $ npm run test
 ```
+
+### 500+ Data Structures and Algorithms Interview Questions & Practice Problems
+
+(Interview question practice)[https://blog.usejournal.com/500-data-structures-and-algorithms-practice-problems-35afe8a1e222]
 
 ## What's included
 

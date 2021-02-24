@@ -1,10 +1,10 @@
-function greet(name, callback){
-	console.log( `hi ${name}`)
-	callback()
+function greet(name, callback) {
+  console.log(`hi ${name}`);
+  callback();
 }
 
-function callMe(){
-	console.log('I am callback function');
+function callMe() {
+  console.log("I am callback function");
 }
 
-greet("pepito", callMe)
+greet("pepito", callMe);

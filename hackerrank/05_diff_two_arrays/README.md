@@ -2,7 +2,16 @@
 
 ## source
 
-- [source](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/sum-all-numbers-in-a-range)
+- [source](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/diff-two-arrays)
+
+## Technical bases
+- [includes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)
+- [concat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat)
+- [filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+
+## Explication
+
+- [stackoverflow-symmetric difference](https://stackoverflow.com/questions/1187518/how-to-get-the-difference-between-two-arrays-in-javascript)
 
 ## Run test
 
@@ -10,12 +19,17 @@
 $ npm run test
 ```
 
-## Sum All Numbers in a RangePassed
+## Diff Two Arrays
 
-We'll pass you an array of two numbers. Return the sum of those two numbers plus the sum of all the numbers between them. The lowest number will not always come first.
+Compare two arrays and return a new array with any items only found in one of the two given arrays, but not both. In other words, return the symmetric difference of the two arrays.
 
-For example, sumAll([4,1]) should return 10 because sum of all the numbers between 1 and 4 (both inclusive) is 10.
+**Note:** You can return the array with its elements in any order.s
 
 ### Example 1:
 
-For example, **sumAll([4,1])** should return **10** because sum of all the numbers between 1 and 4 (both inclusive) is **10**.
+For example:
+
+ **["diorite", "andesite", "grass", "dirt", "pink wool", "dead shrub"]** , **["diorite", "andesite", "grass", "dirt", "dead shrub"]** should return **["pink wool"]**
+
+
+**[1, 2, 3, 5]** , **[1, 2, 3, 4, 5]** should return **[4]**

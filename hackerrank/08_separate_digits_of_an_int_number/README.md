@@ -10,7 +10,6 @@
 $ npm run test
 ```
 
-
 ### Examples:
 
 - If the argument is **123456** should return the digist separate

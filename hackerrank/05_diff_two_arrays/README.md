@@ -5,6 +5,7 @@
 - [source](https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/intermediate-algorithm-scripting/diff-two-arrays)
 
 ## Technical bases
+
 - [includes](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes)
 - [concat](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat)
 - [filter](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
@@ -29,7 +30,6 @@ Compare two arrays and return a new array with any items only found in one of th
 
 For example:
 
- **["diorite", "andesite", "grass", "dirt", "pink wool", "dead shrub"]** , **["diorite", "andesite", "grass", "dirt", "dead shrub"]** should return **["pink wool"]**
-
+**["diorite", "andesite", "grass", "dirt", "pink wool", "dead shrub"]** , **["diorite", "andesite", "grass", "dirt", "dead shrub"]** should return **["pink wool"]**
 
 **[1, 2, 3, 5]** , **[1, 2, 3, 4, 5]** should return **[4]**

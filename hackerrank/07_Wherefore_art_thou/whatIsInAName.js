@@ -21,4 +21,4 @@ function whatIsInAName(collection, source) {
   return newArray;
 }
 
-module.exports = whatIsInAName
+module.exports = whatIsInAName;

@@ -36,5 +36,5 @@ var possibleSubsets = function (arrayOfNums) {
   }
   return result;
 };
-
+// possibleSubsets([1, 2, 3]);
 module.exports = possibleSubsets;

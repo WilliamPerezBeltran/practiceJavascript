@@ -1,0 +1,34 @@
+function action(i){
+	console.log(i)
+}
+
+function repeat(n, action){
+	for(let x = 0; x <= n; x++){
+		action(x)	
+	}
+}
+
+console.log(repeat(10,action))
+console.log("--------------------")
+
+let labels = []
+repeat(10,i=>{
+	labels.push(`Unit ${i}`)
+})
+
+console.log(labels)
+
+
+console.log("--------------------")
+
+function greaterThan(n){
+	return (m)=>m>n
+}	
+
+let graterThan10 = greaterThan(20)
+console.log(graterThan10(20))
+
+
+console.log("--------------------")
+
+

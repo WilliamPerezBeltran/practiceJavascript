@@ -1,4 +1,3 @@
- let circle = (r) => Math.PI * r * r
+let circle = (r) => Math.PI * r * r;
 
-
-export default circle 
+export default circle;

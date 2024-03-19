@@ -29,33 +29,30 @@ https://lemoncode.net/lemoncode-blog/2017/9/5/introduccion-programacion-funciona
 
 */
 
-
-
-function contador (){
-  let contador = 0
-  function incrementar(){
-    contador++
-    console.log(contador)
+function contador() {
+  let contador = 0;
+  function incrementar() {
+    contador++;
+    console.log(contador);
   }
-  function decrementar(){
-    contador--
-    console.log(contador)
+  function decrementar() {
+    contador--;
+    console.log(contador);
   }
 
-  const mensaje = `el valor actual es: `
-  function log(){
-    console.log(`${mensaje} ${contador} `)
+  const mensaje = `el valor actual es: `;
+  function log() {
+    console.log(`${mensaje} ${contador} `);
   }
 
-  return [incrementar,decrementar,log]
-
+  return [incrementar, decrementar, log];
 }
-const [incrementar,decrementar,log] = contador()
-incrementar()
-incrementar()
-incrementar()
-incrementar()
-incrementar()
-incrementar()
-decrementar()
-log()
+const [incrementar, decrementar, log] = contador();
+incrementar();
+incrementar();
+incrementar();
+incrementar();
+incrementar();
+incrementar();
+decrementar();
+log();

@@ -1,4 +1,3 @@
-
 // how long to wait before user is flagged as idle (ms)
 // const IDLE_TIMER_SECONDS = 60000;
 const IDLE_TIMER_SECONDS = 3000;
@@ -9,7 +8,6 @@ const REFRESH_EVERY_SECONDS = 1000;
 const DEBUG = true;
 
 const serviceIdle = {
-
   idle: false,
   started: false,
   refreshing: false,
@@ -18,21 +16,21 @@ const serviceIdle = {
   idleTimer: null,
 
   init() {
-    console.log("init()")
-    console.log(this.idle)
+    console.log("init()");
+    console.log(this.idle);
 
     //  this.onActivityDetected = () => {
     //   debounce(this, this.resetIdleTimer, 500, true);
     // };
 
-     this.start()
+    this.start();
   },
   start() {
-       console.log("start");
+    console.log("start");
     // do nothing on during test environments
     // if (Ember.testing) {
-      // eslint-disable-line ember-suave/no-direct-property-access
-      // return;
+    // eslint-disable-line ember-suave/no-direct-property-access
+    // return;
     // }
 
     this.started = true;
@@ -177,7 +175,6 @@ const serviceIdle = {
     session.set("sessionTimeout", true);
     session.set("onLogin", window.location.href);
     session.invalidate();
-
   },
 
   refreshSession() {
@@ -193,9 +190,6 @@ const serviceIdle = {
       console.debug("[Idle] Making request to backend to refresh session time"); // eslint-disable-line no-console
     }
 
-
-
-
     // hit Keycloak to refresh session, if user isnt logged in anymore then log the user out
     this.fetch
       .request("refresh_session", { method: "POST" })
@@ -209,17 +203,12 @@ const serviceIdle = {
       .catch(() => {
         this.timeout();
       });
-
   },
 
   // see if Keycloak session is still alive, log out if not
   checkForTimeout() {
     console.log("checkForTimeout");
     this.refreshing = true;
-    
-
-
-
 
     this.fetch
       .request("check_session_status", { method: "POST" })
@@ -242,8 +231,7 @@ const serviceIdle = {
       .catch(() => {
         this.timeout();
       });
-
   },
-}
+};
 
-console.log(serviceIdle.init())
+console.log(serviceIdle.init());

@@ -2,7 +2,7 @@ function threeDivSubsequences(number) {
   let numberArray = number.toString().split("");
   let setOfSubsequences = numberArray.reduce(
     (a, v) => a.concat(a.map((d) => [v].concat(d))),
-    [[]],
+    [[]]
   );
 
   let contador = 0;

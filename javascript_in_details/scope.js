@@ -24,43 +24,40 @@ const hummus = function (factor) {
   ingredient(0.5, "teaspoon", "cumin");
 };
 
-
-console.log("---------------")
-console.log(hummus(2))
-
+console.log("---------------");
+console.log(hummus(2));
 
 let day2 = {
   squirrel: false,
-  events: ["work", "touched tree", "pizza", "running"]
+  events: ["work", "touched tree", "pizza", "running"],
 };
 
-day2.william = "ole"
-console.log(day2['events']);
-console.log(day2['william']);
+day2.william = "ole";
+console.log(day2["events"]);
+console.log(day2["william"]);
 console.log(day2.william);
 console.log(day2);
 
-delete day2.william
+delete day2.william;
 console.log(day2);
 console.log(Object.keys(day2));
 console.log(Object.values(day2));
-console.log("---------------")
-console.log(Object.assign(day2,{william:"ole"}));
-console.log(Object.assign(day2,{myArray:[1,2,3,45]}));
-console.log(Object.assign({},{a:1}));
+console.log("---------------");
+console.log(Object.assign(day2, { william: "ole" }));
+console.log(Object.assign(day2, { myArray: [1, 2, 3, 45] }));
+console.log(Object.assign({}, { a: 1 }));
 
-let score = {visitors: 0, home: 0};
-score.visitors =11
-score.william =23
+let score = { visitors: 0, home: 0 };
+score.visitors = 11;
+score.william = 23;
 
-console.log(score)
+console.log(score);
 
-console.log("---------------")
+console.log("---------------");
 
-let journey = []
-function addEntry(events,squirrel){
-	journey.push({events,squirrel})
-
+let journey = [];
+function addEntry(events, squirrel) {
+  journey.push({ events, squirrel });
 }
 
 /*
@@ -73,13 +70,11 @@ function addEntry(events,squirrel){
 
 */
 
+addEntry("addkey", "wili");
+console.log(journey);
+addEntry(["work", "touched tree", "pizza", "running", "television"], false);
+console.log(journey);
 
-addEntry("addkey","wili")
-console.log(journey)
-addEntry(["work", "touched tree", "pizza", "running",
-          "television"], false);
-console.log(journey)
-
-a3 = [1,2,2,3]
-a3.includes(2)
-	console.log(a3.includes(2))
+a3 = [1, 2, 2, 3];
+a3.includes(2);
+console.log(a3.includes(2));

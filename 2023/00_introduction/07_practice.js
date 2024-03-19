@@ -71,7 +71,7 @@ console.log(ee);
 const fruits = ["apple", "banana", "grapes", "mango", "orange"];
 let filterItems = (fruits, query) => {
   return fruits.filter((element) =>
-    element.toLowerCase().includes(query.toLowerCase()),
+    element.toLowerCase().includes(query.toLowerCase())
   );
 };
 console.log(filterItems(fruits, "ap")); // ['apple', 'grapes']
@@ -135,7 +135,7 @@ console.log(cha.map((item) => item.name));
 console.log(
   cha.map(function (item) {
     return item.name;
-  }),
+  })
 );
 function getName(item) {
   return item.name;
@@ -147,7 +147,7 @@ console.log(cha.map((item) => item.height));
 console.log(
   cha.map((item) => {
     return { name: item.name, height: item.height };
-  }),
+  })
 );
 
 console.log("==================");
@@ -163,7 +163,7 @@ console.log(cha.reduce((accu, item) => accu + parseInt(item.height), 0));
 console.log("=========ljkjk");
 let totalNames = cha.reduce(
   (accu, item) => accu + item.name.split(" ").join("").length,
-  0,
+  0
 );
 //Get the total number of characters by eye color (hint. a map of eye color to count
 console.log(totalNames);
@@ -172,7 +172,7 @@ console.log(cha.map((item) => item.name.split(" ").join("").length));
 console.log(
   cha
     .map((item) => item.name.split(" ").join("").length)
-    .reduce((accu, item) => accu + item, 0),
+    .reduce((accu, item) => accu + item, 0)
 );
 
 // FILTER

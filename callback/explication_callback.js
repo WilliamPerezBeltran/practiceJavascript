@@ -9,8 +9,4 @@ function callMe() {
 
 greet("pepito", callMe);
 
-
-function ole(parameters){
-		
-
-}
+function ole(parameters) {}

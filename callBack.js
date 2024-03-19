@@ -37,18 +37,16 @@ la potencia de un callback es esperar pacientemente a que una funcion asincrona 
 recibir la informacion que la funcion invocadora quiera mandar 
 
  */
-function buscar(dni, fn ){
-setTimeout(()=>{
-	fn("william")
-},2000)
-
+function buscar(dni, fn) {
+  setTimeout(() => {
+    fn("william");
+  }, 2000);
 }
-buscar("12", (name)=>{
-	console.log("se ejcuto el callBack")
-	console.log(name)
-})
+buscar("12", (name) => {
+  console.log("se ejcuto el callBack");
+  console.log(name);
+});
 
 for (var i = 0; i < 10; ++i) {
-	console.log(`${i}`)
-	
+  console.log(`${i}`);
 }

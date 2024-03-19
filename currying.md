@@ -1,11 +1,12 @@
 https://github.com/idcmardelplata/functional-programming-jargon/tree/master
 https://stackoverflow.com/questions/37763828/javascript-es6-double-arrow-functions
+
 # Currying
+
 - El proceso de convertir una funcion que toma multiples argumentos, en una funcion que los toma uno a la vez.
--Cada vez que la funcion es llamada, esta solamente acepta un argumento y retorna una funcion que toma el siguiente argumento y asi continua hasta que se pasen todos los argumentos.
+  -Cada vez que la funcion es llamada, esta solamente acepta un argumento y retorna una funcion que toma el siguiente argumento y asi continua hasta que se pasen todos los argumentos.
 
-
- ```bash
+```bash
 const sum = (a, b) => a + b
 
 const curriedSum = (a) => (b) => a + b
@@ -19,7 +20,6 @@ add2(10) // 12
 
 # ejempli
 
-
 ```bash
 let add = (a,b)=>a+b
 let add = (a) => (b) => a+b
@@ -30,9 +30,7 @@ let seven = add3(4); // 7
 
 ```
 
-
 # ejempli
-
 
 ```bash
 
@@ -47,10 +45,7 @@ export default function applyMiddleware(...middlewares) {
 
 ```
 
-
-
 # ejempli
-
 
 ```bash
 
@@ -80,14 +75,10 @@ function applyMiddleware(...middlewares) {
 
 /*lo de arriba es  los mismo que esto:*/
 
-const applyMiddleware = (...middlewares) => (createStore) => (reducer, preloadedState, enhancer) =>{return{...store, dispatch}}  
+const applyMiddleware = (...middlewares) => (createStore) => (reducer, preloadedState, enhancer) =>{return{...store, dispatch}}
 
 
 
 
 
 ```
-
-
-
-

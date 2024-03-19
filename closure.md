@@ -1,7 +1,6 @@
-
 https://stackoverflow.com/questions/111102/how-do-javascript-closures-work?rq=1
-# Ejemplo con funciones normales
 
+# Ejemplo con funciones normales
 
 ```bash
 
@@ -16,7 +15,8 @@ f() // The only way to retrieve `secret`, is to invoke `f`
 
 ```
 
-# Ejemplo con arrow functions 
+# Ejemplo con arrow functions
+
 ```bash
 const myFunc = ()=>{
 	const secret = Math.trunc(Math.random() * 100)
@@ -28,16 +28,14 @@ w() // The only way to retrieve `secret`, is to invoke `f`
 
 ```
 
+# teoria
 
-# teoria 
 https://stackoverflow.com/questions/111102/how-do-javascript-closures-work?rq=1
 https://stackoverflow.com/questions/111102/how-do-javascript-closures-work?rq=1
 https://stackoverflow.com/questions/111102/how-do-javascript-closures-work?rq=1
 
+# Ejemplo con arrow functions
 
-
-
-# Ejemplo con arrow functions 
 ```bash
 const myFunc = ()=>{
 	const secret = Math.trunc(Math.random() * 100)
@@ -71,3 +69,4 @@ En C y en la mayoría de los otros lenguajes comunes, después de que una funci�
 More about this source textSource text required for additional translation information
 Send feedback
 Side panels
+```

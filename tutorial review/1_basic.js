@@ -1,17 +1,14 @@
-
 // ===============closure==================
-let father = ()=>{
-  let x = "secret"
-  function inner(){
-    return `devuelve ${x}`
+let father = () => {
+  let x = "secret";
+  function inner() {
+    return `devuelve ${x}`;
   }
-  return inner
+  return inner;
+};
 
-}
-
-let response = father()
-console.log(response())//devuelve secret
-
+let response = father();
+console.log(response()); //devuelve secret
 
 // ===============--callback--==================
 
@@ -25,54 +22,54 @@ que luego se invoca dentro de la función externa para completar algún tipo de 
 
 */
 
-function myCallback(message){
-  console.log(message)
+function myCallback(message) {
+  console.log(message);
 }
 
-function welcome(name,callback){
-  let message =  `welcome ${name}`
-  callback(message)
+function welcome(name, callback) {
+  let message = `welcome ${name}`;
+  callback(message);
 }
 
-welcome("antonio",myCallback)
-
-
+welcome("antonio", myCallback);
 
 // ===============--destructuring assigment --==================
-const user = { name: 'John Doe', age: 34 };
-const {name, age} = user
-
+const user = { name: "John Doe", age: 34 };
+const { name, age } = user;
 
 // ===============--promise--==================
 
-const miPromesa  = new Promise((resolve, reject)=>{
-  let condicional = true
-  setTimeout(()=>{condicional? resolve("resolve"):reject("reject")},500)
-})
+const miPromesa = new Promise((resolve, reject) => {
+  let condicional = true;
+  setTimeout(() => {
+    condicional ? resolve("resolve") : reject("reject");
+  }, 500);
+});
 
 miPromesa
-.then(value=>{console.log(value)})
-.catch(err =>{console.log(err)})
+  .then((value) => {
+    console.log(value);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
 
-
-
-
-
-const miPromesa2  = new Promise((resolve, reject)=>{
-  let condicional = false
-  if(condicional){
-    resolve("resolved")
-
-  }else{
-      reject("rejected")
-
+const miPromesa2 = new Promise((resolve, reject) => {
+  let condicional = false;
+  if (condicional) {
+    resolve("resolved");
+  } else {
+    reject("rejected");
   }
-})
+});
 
 miPromesa2
-.then(value=>{console.log(value)})
-.catch(err =>{console.log(err)})
-
+  .then((value) => {
+    console.log(value);
+  })
+  .catch((err) => {
+    console.log(err);
+  });
 
 /*
 fetch("/robots.txt")
@@ -85,68 +82,37 @@ fetch("/robots.txt")
 
 // ===============--async-await--==================
 
-
-
 // https://javascript.info/async-await
 
-
-
-
 // ===========================
 // ===========================
-
-
-
-
 
 // ===============--_________--==================
 
 // ===========================
 // ===========================
 
+// ===============--_________--==================
 
-
-
+// ===========================
+// ===========================
 
 // ===============--_________--==================
 
 // ===========================
 // ===========================
 
+// ===============--_________--==================
 
-
-
+// ===========================
+// ===========================
 
 // ===============--_________--==================
 
 // ===========================
 // ===========================
 
-
-
-
-
 // ===============--_________--==================
 
 // ===========================
 // ===========================
-
-
-
-
-
-// ===============--_________--==================
-
-// ===========================
-// ===========================
-
-
-
-
-
-// ===============--_________--==================
-
-// ===========================
-// ===========================
-
-

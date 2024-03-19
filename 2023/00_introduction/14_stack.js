@@ -10,51 +10,47 @@ and false if the size of the stack is bigger than 0.
 to the length property of an array.
 */
 
-function stack(){
-	let array = []
-		
-	this.push = function(element){
-		array.push(element)	
-	}
+function stack() {
+  let array = [];
 
-	this.pop = function(){
-		return array.pop()	
-	
-	}
-	
-	this.peek = function(){
-		return array[array.length-1]	
-	}
+  this.push = function (element) {
+    array.push(element);
+  };
 
-	this.isEmpty = function(){
-		return array.length === 0
-	
-	}
-	
-	this.clear = function(){
-	 	array = []	
-	}
+  this.pop = function () {
+    return array.pop();
+  };
 
-	this.size = function(){
-		return array.length	
-	}
+  this.peek = function () {
+    return array[array.length - 1];
+  };
 
-	this.print = function(){
-		return array.toString()	
-	}
+  this.isEmpty = function () {
+    return array.length === 0;
+  };
 
+  this.clear = function () {
+    array = [];
+  };
 
+  this.size = function () {
+    return array.length;
+  };
+
+  this.print = function () {
+    return array.toString();
+  };
 }
 
-let myStack = new stack()
+let myStack = new stack();
 
-console.log(myStack)
-myStack.push(1)
-myStack.push(2)
-myStack.push(3)
-myStack.push(4)
+console.log(myStack);
+myStack.push(1);
+myStack.push(2);
+myStack.push(3);
+myStack.push(4);
 
-console.log(myStack.print()) // => 1,2,3,4
-console.log(myStack.isEmpty()) // false 
-console.log(myStack.size()) // false 
-console.log(myStack.peek()) // 4
+console.log(myStack.print()); // => 1,2,3,4
+console.log(myStack.isEmpty()); // false
+console.log(myStack.size()); // false
+console.log(myStack.peek()); // 4

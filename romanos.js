@@ -1,5 +1,4 @@
-
- const convertRomanNumerals = numeral => {
+const convertRomanNumerals = (numeral) => {
   var conversion = {
     M: 1000,
     CM: 900,
@@ -26,11 +25,10 @@
   let rta = 0;
 
   for (let i = 0; i < newA.length; ++i) {
-       rta += newA[i];
+    rta += newA[i];
   }
 
   return rta;
 };
 
-
-console.log(convertRomanNumerals("V"))
+console.log(convertRomanNumerals("V"));

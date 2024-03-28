@@ -25,7 +25,7 @@ let arr1 = [1, 2, 3];
 let arr3 = [10, 20, 30];
 
 arr1 = arr1.concat(arr3);
-console.log(arr1);
+console.log(arr1);gits
 
 console.log([...arr1, ...arr3]);
 

@@ -75,8 +75,34 @@ function adddd(a,b){
 			return a + b
 		}
 	}
-
 	return a+b
 }
 console.log(adddd(10,6))
 console.log(adddd(10)(6))
+
+function main(a) {
+  return function(b) {
+    if (b !== undefined) {
+      return a + b; 
+    }
+    return a;
+  };
+}
+function addd(a,b){
+	if(arguments[1] !== undefined){
+		return a + b
+	}
+	return (b)=>{
+		return a+b
+	}
+}
+
+function adddd(a,b){
+	console.log(typeof b)
+	if(typeof b === "undefined"){
+		return function(b){
+			return a + b
+		}
+	}
+	return a+b
+}

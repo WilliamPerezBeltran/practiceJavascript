@@ -1,0 +1,15 @@
+@import 'variables';
+@import 'mixins';
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: $primary-color;
+  color: white;
+}
+
+.App {
+  @include flex-center;
+  height: 100vh;
+  text-align: center;
+}
+
